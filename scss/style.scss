@@ -1,0 +1,21 @@
+@import 'mixingrid';
+
+// Переменные для кастомизации Mixingrid
+$columns: 12; // Колличество колонок
+$max-width: 1200px; // Максимальная ширина контейнера
+$gutter: 15px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке
+// Брэйкпоинты
+$break_xl: 1400px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 769px;
+$break_xs: 500px;
+
+// Цвета
+$blue: #2050A2;
+$orange: #F48359;
+
+// Подключение файлов
+@import 'blocks/settings';
