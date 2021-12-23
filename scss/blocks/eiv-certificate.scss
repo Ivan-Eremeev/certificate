@@ -1,0 +1,83 @@
+.eiv-certificate  {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  padding: 40px 0;
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__table {
+    margin-bottom: 10px;
+    overflow-x: auto;
+    table {
+      width: 100%;
+      font-size: 18px;
+      tr {
+        border: 1px solid #262526;
+      }
+      td {
+        padding: 5px 15px;
+        vertical-align: top;
+        &:nth-child(2) {
+          text-align: right;
+          img {
+            margin-left: auto;
+          }
+        }
+      }
+      img {
+        
+      }
+    }
+  }
+  &__orange {
+    background-color: $orange;
+    text-align: center;
+    color: #fff;
+  }
+  &__qr {
+    display: block;
+    position: relative;
+    padding-right: 50px;
+  }
+  &__stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  @media (max-width: $break_xs) {
+    &__title {
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__table {
+      table {
+        font-size: 16px;
+        tr {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        td {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
