@@ -137,7 +137,6 @@
 }
 .eiv-certificate__table {
   margin-bottom: 10px;
-  overflow-x: auto;
 }
 .eiv-certificate__table table {
   width: 100%;
@@ -183,16 +182,15 @@
     font-size: 18px;
   }
   .eiv-certificate__table table {
-    font-size: 16px;
-  }
-  .eiv-certificate__table table tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    font-size: 14px;
   }
   .eiv-certificate__table table td {
-    width: 100%;
+    vertical-align: middle;
+  }
+  .eiv-certificate__text {
+    font-size: 12px;
+  }
+  .eiv-certificate__qr {
+    padding-right: 30px;
   }
 }

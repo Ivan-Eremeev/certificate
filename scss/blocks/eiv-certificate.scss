@@ -19,7 +19,6 @@
   }
   &__table {
     margin-bottom: 10px;
-    overflow-x: auto;
     table {
       width: 100%;
       font-size: 18px;
@@ -69,15 +68,22 @@
     }
     &__table {
       table {
-        font-size: 16px;
+        font-size: 14px;
         tr {
-          display: flex;
-          flex-wrap: wrap;
+          // display: flex;
+          // flex-wrap: wrap;
         }
         td {
-          width: 100%;
+          // width: 100%;
+          vertical-align: middle;
         }
       }
+    }
+    &__text {
+      font-size: 12px;
+    }
+    &__qr {
+      padding-right: 30px;
     }
   }
 }
