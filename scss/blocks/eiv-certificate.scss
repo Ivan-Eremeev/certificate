@@ -65,7 +65,7 @@
   }
   &__square {
     display: block;
-    width: 20px;
+    margin-right: 10px;
   }
   @media (max-width: $break_xs) {
     &__title {

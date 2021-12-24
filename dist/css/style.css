@@ -184,7 +184,7 @@
 }
 .eiv-certificate__square {
   display: block;
-  width: 20px;
+  margin-right: 10px;
 }
 @media (max-width: 500px) {
   .eiv-certificate__title {
