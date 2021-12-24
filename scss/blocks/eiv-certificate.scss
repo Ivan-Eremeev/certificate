@@ -59,6 +59,14 @@
     font-size: 14px;
     line-height: 1.7;
   }
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+  &__square {
+    display: block;
+    width: 20px;
+  }
   @media (max-width: $break_xs) {
     &__title {
       font-size: 24px;
