@@ -186,6 +186,9 @@
   display: block;
   margin-right: 10px;
 }
+.eiv-certificate__square + span {
+  display: block;
+}
 @media (max-width: 500px) {
   .eiv-certificate__title {
     font-size: 24px;
