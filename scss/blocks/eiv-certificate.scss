@@ -2,6 +2,8 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   padding: 40px 0;
+  position: relative;
+  z-index: 2;
   &__title {
     font-size: 36px;
     font-weight: bold;
@@ -9,6 +11,9 @@
     color: $blue;
     text-align: center;
     margin-bottom: 5px;
+    &--mb20 {
+      margin-bottom: 20px;
+    }
   }
   &__subtitle {
     font-size: 22px;
@@ -30,13 +35,20 @@
         vertical-align: top;
         &:nth-child(2) {
           text-align: right;
-          img {
-            margin-left: auto;
-          }
         }
       }
       img {
         
+      }
+    }
+    &--2 {
+      table {
+        td {
+          &:nth-child(2) {
+            border-left: 1px solid #262526;
+            text-align: left;
+          }
+        }
       }
     }
   }
@@ -45,10 +57,22 @@
     text-align: center;
     color: #fff;
   }
+  &__green {
+    background-color: $green;
+    color: #fff;
+    td {
+      padding: 8px 15px !important;
+    }
+  }
   &__qr {
     display: block;
     position: relative;
     padding-right: 50px;
+  }
+  &__qr2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
   &__stars {
     position: absolute;
@@ -68,6 +92,39 @@
     margin-right: 10px;
     + span {
       display: block;
+    }
+  }
+  &__logo {
+    text-align: center;
+    margin-bottom: 20px;
+    img {
+      max-width: 200px;
+    }
+  }
+  &__el1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__el2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__el3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  @media (max-width: $break_sm) {
+    &__el1 {
+      width: 100px;
+    }
+    &__el2 {
+       width: 100px;
+    }
+    &__el3 {
+       width: 200px;
     }
   }
   @media (max-width: $break_xs) {
