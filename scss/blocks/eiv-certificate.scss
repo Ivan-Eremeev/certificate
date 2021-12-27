@@ -146,6 +146,15 @@
           vertical-align: middle;
         }
       }
+      &--2 {
+        table {
+          td {
+            &:nth-child(2) {
+              text-align: center;
+            }
+          }
+        }
+      }
     }
     &__text {
       font-size: 12px;

@@ -261,6 +261,9 @@
   .eiv-certificate__table table td {
     vertical-align: middle;
   }
+  .eiv-certificate__table--2 table td:nth-child(2) {
+    text-align: center;
+  }
   .eiv-certificate__text {
     font-size: 12px;
   }
